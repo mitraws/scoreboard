@@ -51,12 +51,11 @@ console.log("players:", players)
   const incrementScore = (id, changeBy) => {
     // console.log("id:", id, "changeBy:", changeBy);
 
-    const updatedPlayers = players.map((player, index) => {
+    const updatedPlayers = players.map((player) => {
     //  console.log("check player", player.name)
       if (player.id === id) {
       //  console.log("check 2")
         return {
-          key: index,
           key: player.id,
           name: player.name,
           score: player.score + changeBy,
