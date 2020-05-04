@@ -8,7 +8,7 @@ export default function Player(props) {
 // };  
 console.log("props?", props)
   return (
-        <li className="Player">
+        <li className="Player" key={props.id}>
           <p>{props.name} (score: {props.score}) 
            <button onClick={() => {props.incrementScore(props.id, 1)}}>+</button>
            <button onClick={() => {props.incrementScore(props.id, -1)}}>-</button>

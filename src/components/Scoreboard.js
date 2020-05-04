@@ -56,7 +56,7 @@ console.log("players:", players)
       if (player.id === id) {
       //  console.log("check 2")
         return {
-          key: player.id,
+          id: player.id,
           name: player.name,
           score: player.score + changeBy,
         } 
@@ -91,12 +91,11 @@ console.log("players:", players)
   ));
 
   const resetScore = () => {
-    const resetPlayers = players.map((player, index) => {
+    const resetPlayers = players.map((player) => {
       console.log("check player", player.name)
 
        return {
-        key: index,
-        key: player.id,
+        id: player.id,
         name: player.name,
         score: player.score = 0,
        };

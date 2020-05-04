@@ -3,7 +3,6 @@ import React from 'react';
 // import './App.css';
 import Title from "./components/Title"
 import Scoreboard from "./components/Scoreboard"
-import AddPlayerForm from './components/AddPlayerForm';
 
 function App() {
   return (
